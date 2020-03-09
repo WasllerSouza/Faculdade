@@ -6,22 +6,22 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author SAMSUNG
+ * @author Wasller L.M. Souza
  */
 public class main {
 
     public static void main(String[] args) throws IOException {
         int value;
         Tree theTree = new Tree();
-        theTree.insert(1, "Luziania");
-        theTree.insert(2, "Dados");
-        theTree.insert(3, "de");
+        theTree.insert(5, "Luziania");
+        theTree.insert(3, "Dados");
+        theTree.insert(2, "de");
         theTree.insert(4, "campus");
-        theTree.insert(5, "Estrutura");
-        theTree.insert(6, "sistemas");
-        theTree.insert(7, "2019");
-        theTree.insert(8, "informacao");
-        theTree.insert(9, "de");
+        theTree.insert(1, "Estrutura");
+        theTree.insert(7, "sistemas");
+        theTree.insert(6, "2019");
+        theTree.insert(9, "informacao");
+        theTree.insert(8, "de");
         while (true) {
             System.out.println("Digite a primeira letra da ação que deseja, ");
             System.out.println("insert, find, delete ou traverse: ");
@@ -33,6 +33,7 @@ public class main {
                 case 'i':
                     System.out.println("Entre com a chave de insert: ");
                     value = getInt();
+                    System.out.println("Entre com o valor do No: ");
                     String str = getString();
                     theTree.insert(value, str);
                     break;

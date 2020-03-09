@@ -1,7 +1,11 @@
 package arvore;
 
 import java.util.Stack;
-
+/**
+ * Classe Tree instanciara a árvore propriamente dita, o objeto que mantém todos 
+ * os nós
+ * @author Wasller L. M. Souza
+ */
 public class Tree {
 
     private Node root;      // primeiro nó da arvore(Nó raiz)
