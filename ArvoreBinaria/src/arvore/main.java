@@ -24,7 +24,7 @@ public class main {
         theTree.insert(8, "de");
         while (true) {
             System.out.println("Digite a primeira letra da ação que deseja, ");
-            System.out.println("insert, find, delete ou traverse: ");
+            System.out.println("insert, find, delete, traverse ou exit: ");
             int choice = getChar();
             switch (choice) {
                 case 's':
@@ -62,10 +62,12 @@ public class main {
                     }
                     break;
                 case 't':
-                    System.out.println("Digite o tipo 1, 2 ou 3: ");
+                    System.out.println("Digite o tipo 1- PreOrder, 2- InOrder ou 3- PostOrder: ");
                     value = getInt();
                     theTree.traverse(value);
                     break;
+                case 'e':
+                    System.exit(0);
                 default: 
                     System.out.println("Entrada Invalida\n");
             }
